@@ -93,7 +93,10 @@ document.addEventListener('visibilitychange',
         }
     }
     carousel_img(project_render,'render');
-
+let copyimg=document.getElementById("profile-img");
+copyimg.addEventListener("contextmenu",(e)=>{
+    e.preventDefault();
+});
 // <!-- typed js effect starts -->
 var typed = new Typed(".typing-text", {
     strings: ["INTERIOR DESIGNER", "JUNIOR ARCHITECTURE"],
@@ -123,9 +126,6 @@ document.onkeydown = function (e) {
         return false;
     }
     if (e.ctrlKey && e.keyCode == 'U'.charCodeAt(0)) {
-        return false;
-    }
-    if (e.ctrlKey && e.keyCode == 'C'.charCodeAt(0)) {
         return false;
     }
     if (e.windowKey && e.keyCode == ''.charCodeAt(0)) {
